@@ -2,7 +2,7 @@
 
 body{
     height:150vh;
-    font-family:Roboto, sans-serif;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     display: flex;
     flex-direction:column;
 }
@@ -14,6 +14,10 @@ body{
     background-color: #1f2937;
     font-size:24px;
     padding:10px;
+    z-index: 10;
+    position: sticky;
+    top: 0px;
+    
 }
 
 .logo{
@@ -90,11 +94,16 @@ a:link {
 
 }
 
-.section2 li{
+.section2 li {
     padding:0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: 0.3s;
+    transition-property: transform;
+  }
+  .section2 li:hover  {
+    transform: scale(1.1);
+  }
 
-}
 
 .imageframe {
     width:auto;
