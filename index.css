@@ -1,29 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 body{
-    height:150vh;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     display: flex;
     flex-direction:column;
+    overflow-x: hidden;
+    margin: 0;
+    padding:0;
 }
+
+.example::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .example {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .section0{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    font-family: 'Staatliches', cursive;
+
+  }
+
 
 .header{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items:center;
-    background-color: #1f2937;
-    font-size:24px;
     padding:10px;
     z-index: 10;
-    position: sticky;
-    top: 0px;
-    
 }
 
 .logo{
     color:white;
-    font-weight:bold;
-    font-size:24px;
+    font-size:2rem;
+    opacity:1;
+    margin-left:3rem;
 }
 
 .links ul{
@@ -31,42 +50,117 @@ body{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    margin-right:4rem;
+    gap:1.5rem;
 }
 
 .links li{
     padding:10px;
-    color:#e5e7eb;
-    font-size:18px;
+    color:white;
+    font-size:1.5rem;
+}
+
+.links li:hover{
+    text-decoration-line: underline;
 }
 
 a:link {
     text-decoration:none;
-    color:white;
 }
+
+.section0 .intro{
+    font-size:7rem;
+    flex-grow:1;
+    display:flex;
+    flex-direction:column-reverse;
+}
+
+.alignment{
+    margin-bottom:2rem;
+    margin-left:2rem;
+    font-weight:490;
+    color:white;
+
+}
+
 
 .section1{
     display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:70px;
     background-color:#1f2937;
+    width:100vw;
+    flex-direction:column;
 }
 
 .section1 h1{
-    font-size:48px;
+    font-size:2.5rem;
     color:white;
-    margin-bottom:10px;
-
+    margin:0px;
+    text-align:center;
+    margin-top:1.5rem;
+    font-family: 'Staatliches', cursive;
+    letter-spacing:3px;
 }
 
-.section1 img {
-    border-radius:50%;
-    margin-left:80px;
+.content {
+    display: flex;
+    justify-content:space-evenly;
+    margin:1.5rem;
+    margin-top:1rem;
 }
 
 .description{
     font-size:18px;
     color:#e5e7eb;
+    display:flex;
+    flex-direction: column;
+    align-items:baseline;
+    font-size:1.2rem;
+}
+
+#profilePic{
+    width:13rem;
+    border-radius:50%;
+    margin-top:9px;
+}
+
+
+
+.info{
+    display:flex;
+    gap:1rem;
+    font-family: 'Staatliches', cursive;
+    letter-spacing:1px;
+}
+
+#experienceTitle{
+    color:white;
+    font-size:2.2rem;
+    font-weight:500;
+    text-align:center;
+    margin-bottom:2rem;
+    font-family: 'Staatliches', cursive;
+    letter-spacing:3px;
+}
+
+
+.grid-item{
+    text-align:center;
+    color:white;
+    font-size:1.1rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.grid-item img{
+    width:2.5rem;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns:120px 120px 120px 120px;
+    grid-template-rows:120px 120px 120px ;
+
 }
 
 .footer{
@@ -81,11 +175,13 @@ a:link {
 }
 
 .section2 > div{
-    font-size:36px;
+    font-size:2.5rem;
     font-weight:bold;
     color:#1f2937;
     text-align:center;
     margin-bottom:40px;
+    font-family: 'Staatliches', cursive;
+    letter-spacing:1px;
 }
 
 .section2 ul{
@@ -136,11 +232,13 @@ a:link {
 }
 
 .section3 > div{
-    font-size:36px;
+    font-size:2.5rem;
     font-weight:bold;
     color:#1f2937;
     text-align:center;
     margin-bottom:20px;
+    font-family: 'Staatliches', cursive;
+    letter-spacing:3px;
 }
 
 .section3 img{
@@ -157,6 +255,11 @@ figcaption{
     color:#1f2937;
     text-align:center;
     padding:20px;
+}
+
+.section4 {
+    font-family: 'Staatliches', cursive;
+    letter-spacing:2px;
 }
 
 #contactList{

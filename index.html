@@ -6,43 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <script src="scripts.js" defer></script>
+    <script src="three.min.js"></script>
+    <script src="vanta.birds.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="header" id="section1">
-        <div class="logo">Home</div>
-        <div class="links">
-            <ul>
-                <li id="header1">Projects</li>
-                <li id="header2">Resume</li>
-                <li id="header3">Contact</li>
-            </ul>
+    <div class="section0" id="section0">
+        <div class="header" >
+            <div class="logo">Home</div>
+            <div class="links">
+                <ul>
+                    <li id="header0">About</li>
+                    <li id="header1">Projects</li>
+                    <li id="header2">Resume</li>
+                    <li id="header3">Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="intro">
+            <div class="alignment">
+                Hi, I'm David.
+                <br><span id="typed"></span>
+            </div>
         </div>
     </div>
-    <div class="section1" >
-        <div class="description">
-            <h1>
-                Welcome to my website!
-            </h1>
-            <p>
-               My name is David Liu. 
-               <br> I am a junior CS student at Northeastern Universty,</br>
-               with experience coding in both front-end and back-end.
-               <br>If you have any questions, hit me up and lets chat!</br>
-               
-            </p>
-        </div>
-        <img src="./images/LinkedInPortrait.jpg" alt="">
-    </div>
-    <div class="Experience">
-        <div class="Languages">
-
-        </div>
-        <div class="Frameworks">
-
-        </div>
-        <div class="Tools">
-            
+    <div class="section1" id="section1">
+        <h1>About</h1>
+        <div class="content">
+            <div class="description">
+                <img src="./images/LinkedInPortrait.jpg" alt="" id="profilePic">
+                <div class="info">
+                    <p>
+                        <br>Name: 
+                        <br>Education:
+                        <br>
+                        <br>Grad. Date:
+                        <br>Currently:
+                     </p>
+                     <p>
+                        <br>David Liu
+                        <br>Northeastern University
+                        <br>Khoury College of C.S.
+                        <br>May 2024
+                        <br>On Co-op
+                     </p>
+                </div>
+            </div>
+                <div class="experience">
+                    <div id="experienceTitle">
+                        Languages/Tools
+                    </div>
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <img src="./icon/icons8-java.svg" alt="">
+                            Java
+                        </div>
+                        <div class="grid-item">
+                            <img src="./icon/icons8-python.svg" alt="">
+                            Python
+                        </div>
+                        <div class="grid-item">
+                            <img src="./icon/icons8-c++.svg" alt="">
+                            C++
+                        </div>
+                        <div class="grid-item">
+                            <img src="./icon/sql-svgrepo-com.svg" alt="">
+                            SQL
+                        </div>
+                        <div class="grid-item">
+                            <img src="./icon/icons8-javascript.svg" alt="">
+                            Javascript
+                        </div>
+                        <div class="grid-item">
+                            <img src="./icon/icons8-html-5.svg" alt="">
+                            HTML
+                        </div>
+                        <div class="grid-item">
+                            <img src="./icon/icons8-css3.svg" alt="">
+                            CSS
+                        </div>
+                        <div class="grid-item">
+                            <img src="./icon/icons8-flask.svg" alt="">
+                            Flask
+                        </div>
+                        <div class="grid-item">
+                            <img src="./icon/icons8-react-native.svg" alt="">
+                            React
+                        </div>
+                        <div class="grid-item">
+                            <img src="./icon/icons8-linux-96.png" alt="">
+                            Linux
+                        </div>
+                        <div class="grid-item">
+                            <img src="./icon/icons8-visual-studio-code-2019.svg" alt="">
+                            Visual Studio Code
+                        </div>
+                        <div class="grid-item">
+                            <img src="./icon/icons8-github.svg" alt="">
+                            Github
+                        </div>
+        
+                    </div>
+                </div>
         </div>
     </div>
     <div class="section2" id="section2">
@@ -95,7 +161,7 @@
         </div>
         <figure>
             <img class="resume" src="./images/resumePic11-5-2022.jpg" alt="" >
-            <figcaption>Click to view in new tab</figcaption>
+            <figcaption>Click to view in a new tab</figcaption>
         </figure>
     </div>
     <div class="section4" id="section4">
@@ -117,8 +183,8 @@
 
         </div>
     </div>
-    <div class="footer">
+    <!-- <div class="footer">
         Copyrighted by deez nuts
-    </div>
+    </div> -->
 </body>
 </html>
