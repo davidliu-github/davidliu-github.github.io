@@ -26,8 +26,7 @@ VANTA.BIRDS({
   var options = {
     strings:['I am a developer.', 'I am a designer.','I am a student.'],
     loop:true,
-    typeSpeed:50,
-    backSpeed:20
+    typeSpeed:20,
   }
 
   var typed = new Typed('#typed',options);
@@ -54,7 +53,7 @@ home.addEventListener('click',()=>{
 
 
 container.addEventListener('click',()=>{
-    window.open("https://drive.google.com/file/d/1DExl8IxSiO7YHcUIHgRfyTCgP-8bPzAD/view?usp=sharing","_blank");
+    window.open("https://drive.google.com/file/d/1ENWcMONV2bFbl-Zd5TAlyApdPhmzF-tS/view?usp=sharing","_blank");
 })
 
 krishi.addEventListener('click',()=>{
